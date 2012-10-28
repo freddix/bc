@@ -1,7 +1,7 @@
 Summary:	GNU's bc (a numeric processing language) and dc (a calculator)
 Name:		bc
 Version:	1.06
-Release:	33
+Release:	34
 License:	GPL
 Group:		Applications/Math
 Source0:	ftp://ftp.gnu.org/pub/gnu/bc/%{name}-%{version}.tar.gz
@@ -17,6 +17,8 @@ BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		specflags	-O3
 
 %description
 The bc package includes bc and dc. Bc is an arbitrary precision
