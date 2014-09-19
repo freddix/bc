@@ -1,3 +1,4 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/bc.git
 Summary:	GNU's bc (a numeric processing language) and dc (a calculator)
 Name:		bc
 Version:	1.06
@@ -18,7 +19,7 @@ BuildRequires:	readline-devel
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		specflags	-O3
+%define		specflags	-Ofast
 
 %description
 The bc package includes bc and dc. Bc is an arbitrary precision
